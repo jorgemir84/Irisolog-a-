@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Irisología – Landing Page</title>
 <style>
+  *,*::before,*::after{box-sizing:border-box;}
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,6 +46,8 @@
     border-radius: 18px;
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.08);
+  
+    overflow: hidden;
   }
   .book3d {
     position: relative;
@@ -173,6 +176,12 @@
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.6);
   }
+
+@media (max-width: 860px) {
+  .book3d {
+    transform: rotateY(-18deg) scale(0.9);
+  }
+}
 </style>
 </head>
 <body>
